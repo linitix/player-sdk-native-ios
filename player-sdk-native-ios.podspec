@@ -41,14 +41,14 @@ s.xcconfig = {'FRAMEWORK_SEARCH_PATHS' => '$(PODS_ROOT)/google-cast-sdk/GoogleCa
                     'OTHER_LDFLAGS' => '-ObjC -all_load'}
 
 s.dependency 'google-cast-sdk', '2.3.0'
-s.dependency 'GoogleAds-IMA-iOS-SDK', '3.0.beta.11'
+s.dependency 'GoogleAds-IMA-iOS-SDK-For-AdMob', '3.0.beta.16'
 s.requires_arc = true
 
 
 # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 s.source_files  = "PlayerSDK/**/*.{h,m}", "PlayerSDK/PlayerSDK/**/*.{h,m}"
 s.vendored_library = 'PlayerSDK/libWViPhoneAPI.a'
-#s.exclude_files = "Classes/Exclude"
+# s.exclude_files = "PlayerSDK/DRMHandler.{h.m}"
 
 # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 #
